@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:id="@+id/lnrcenteramlak"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".FragmentAmlak.Fragment_Amlak">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/graylight">
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_gravity="right|center"
+            android:layout_marginRight="16dp"
+            android:id="@+id/arrow_fragment_lavazem_electronic"
+            android:src="@drawable/ic_arrow_forward_black_24dp"></ImageView>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="16dp"
+            android:background="@color/graylight"
+            android:gravity="right"
+            android:text="لوازم الکترونیک"
+            android:textColor="@color/black"
+            android:textSize="20sp"></TextView>
+
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <LinearLayout
+        android:id="@+id/lnrmobileTablet"
+        android:gravity="center_vertical"
+        android:layout_marginTop="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/ic_keyboard_arrow_left_black_24dp"
+
+            >
+
+        </ImageView>
+
+        <TextView
+            android:id="@+id/txtamlak"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="16dp"
+            android:text="موبایل و تبلت"
+            android:textColor="@color/black"
+            android:textSize="18sp">
+
+        </TextView>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/graylight"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        ></LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lnrRayaneh"
+        android:gravity="center_vertical"
+        android:layout_marginTop="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/ic_keyboard_arrow_left_black_24dp"
+
+            >
+
+        </ImageView>
+
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="16dp"
+            android:text="رایانه"
+            android:textColor="@color/black"
+            android:textSize="18sp">
+
+        </TextView>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/graylight"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        ></LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lnrKonsolBazi"
+        android:gravity="center_vertical"
+        android:layout_marginTop="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:layout_marginRight="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="کنسول,بازی ویدیویی و آنلاین"
+            android:textColor="@color/black"
+            android:textSize="18sp">
+
+        </TextView>
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/graylight"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        ></LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lnrSotTasvir"
+        android:gravity="center_vertical"
+        android:layout_marginTop="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/ic_keyboard_arrow_left_black_24dp"
+
+            >
+
+        </ImageView>
+
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="16dp"
+            android:text="صوتی و تصویری"
+            android:textColor="@color/black"
+            android:textSize="18sp">
+
+        </TextView>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/graylight"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        ></LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lnrTelephoneRomizi"
+        android:gravity="center_vertical"
+        android:layout_marginTop="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:layout_marginRight="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="تلفت رومیزی"
+            android:textColor="@color/black"
+            android:textSize="18sp">
+
+        </TextView>
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/graylight"
+        ></LinearLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/lnrAllAgahiLavazemElectronic"
+        android:gravity="center_vertical"
+        android:layout_marginTop="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+
+
+        <TextView
+
+            android:layout_marginRight="16dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="همه آگهی های لوازم الکترونیکی"
+            android:textColor="@color/black"
+            android:textSize="18sp">
+
+        </TextView>
+
+        <ImageView
+
+            android:layout_marginRight="8dp"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:src="@drawable/ic_phone_android_black_24dp">
+
+        </ImageView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/graylight"
+        ></LinearLayout>
+
+</LinearLayout>

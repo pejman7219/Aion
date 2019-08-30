@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#eeeeee"
+        android:gravity="start">
+        <LinearLayout android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:padding="8dp"
+            android:layout_height="?attr/actionBarSize">
+            <ImageView android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_refresh_black_24dp"
+                android:id="@+id/refresh_sabt2"/>
+            <TextView android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:layout_marginRight="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_gravity="center"
+                android:textColor="#000000"
+                android:text="ثبت آگهی"/>
+            <ImageView android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_arrow_forward_black_24dp"
+                android:id="@+id/arrow_page2_addAgahi"/>
+        </LinearLayout>
+    </androidx.appcompat.widget.Toolbar>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:orientation="vertical">
+
+                <TextView android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000000"
+                    android:layout_gravity="end"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="24dp"
+                    android:text="مشخصات کلی"/>
+            <LinearLayout android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView android:layout_width="wrap_content"
+                    android:text="انتخاب"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginBottom="16dp"
+                    android:layout_height="wrap_content"/>
+                <TextView android:layout_width="0dp"
+
+                    android:layout_weight="1"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginBottom="16dp"
+                    android:text="دسته بندی "
+                    android:textSize="18sp"
+                    android:textColor="#000000"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+            <LinearLayout android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView android:layout_width="wrap_content"
+                    android:text="انتخاب"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginBottom="16dp"
+                    android:layout_height="wrap_content"/>
+                <TextView android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginBottom="16dp"
+                    android:text="محدوده آگهی"
+                    android:textSize="18sp"
+                    android:textColor="#000000"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+            <TextView android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:layout_gravity="end"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="16dp"
+                android:layout_marginTop="24dp"
+                android:text="ویژگی ها"/>
+                <LinearLayout android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView android:layout_width="wrap_content"
+                        android:text="تعیین"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginBottom="16dp"
+                        android:layout_height="wrap_content"/>
+                    <TextView android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginBottom="16dp"
+                        android:text="قیمت "
+                        android:textSize="18sp"
+                        android:textColor="#000000"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+                    <LinearLayout android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                       <CheckBox
+                           android:layout_width="wrap_content"
+                           android:layout_gravity="center"
+                           android:layout_height="wrap_content"/>
+                        <TextView android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_marginTop="16dp"
+                            android:layout_marginBottom="16dp"
+                            android:text="شهر من "
+                            android:textSize="18sp"
+                            android:textColor="#000000"
+                            android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+        <LinearLayout android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginTop="16dp"
+            android:layout_height="wrap_content">
+            <Button android:layout_width="0dp"
+                android:layout_weight="0.5"
+                android:text="بعدی"
+                android:textColor="#ffffff"
+                android:textSize="16dp"
+                android:background="@drawable/btn_sabt_agahi"
+                android:id="@+id/btn_sabtAgahi"
+                android:layout_height="wrap_content"/>
+            <LinearLayout android:layout_width="0dp"
+                android:layout_weight="0.5"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

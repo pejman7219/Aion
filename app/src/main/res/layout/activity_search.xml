@@ -39,11 +39,12 @@
             </EditText>
 
             <ImageView
+                android:id="@+id/back"
                 android:layout_marginRight="25dp"
                 android:layout_gravity="center"
-                android:layout_width="20dp"
-                android:layout_height="20dp"
-                android:src="@drawable/right_arrow"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/ic_arrow_forward_black_24dp"
                 >
 
             </ImageView>

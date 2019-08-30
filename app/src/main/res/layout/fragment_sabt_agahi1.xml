@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:id="@+id/LL_PageNewAdd"
+    android:layout_height="match_parent"
+    android:focusableInTouchMode="true"
+    android:elevation="8dp">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#eeeeee"
+        android:gravity="start">
+        <LinearLayout android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:padding="8dp"
+            android:layout_height="?attr/actionBarSize">
+            <ImageView android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_refresh_black_24dp"
+                android:id="@+id/refresh_sabt"/>
+            <TextView android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:layout_marginRight="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_gravity="center"
+                android:textColor="#000000"
+                android:text="ثبت آگهی"/>
+            <ImageView android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_arrow_forward_black_24dp"
+                android:id="@+id/arrow_newAdd"/>
+        </LinearLayout>
+    </androidx.appcompat.widget.Toolbar>
+    <ScrollView android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:paddingBottom="16dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginTop="24dp"
+                android:layout_marginBottom="16dp"
+                android:text="عکس آگهی"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+            <TextView android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:layout_marginBottom="16dp"
+                android:layout_gravity="end"
+                android:textColor="#666666"
+                android:text="افزودن عکس بازدید آگهی شما را تا سه برابر افزایش می دهد."/>
+            <LinearLayout android:layout_width="wrap_content"
+                android:layout_gravity="end"
+                android:background="@drawable/border_addax"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+            <ImageView android:layout_width="46dp"
+                android:layout_height="46dp"
+                android:layout_gravity="right"
+                android:src="@drawable/ic_add_a_photo_black_24dp"
+                android:id="@+id/addimg_sabt"/>
+
+            <TextView android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#888888"
+                android:textSize="16sp"
+                android:layout_marginTop="16dp"
+                android:layout_gravity="end"
+                android:text="افزودن عکس"/>
+            </LinearLayout>
+            <TextView android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_gravity="end"
+                android:layout_marginTop="16dp"
+                android:text="عنوان آگهی"/>
+            <TextView android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#666666"
+                android:layout_gravity="end"
+                android:textSize="16sp"
+                android:layout_marginBottom="16dp"
+                android:layout_marginTop="16dp"
+                android:text="درعنوان آگهی به موارد مهم وچشمگیر اشاره کنید."/>
+            <EditText android:layout_width="match_parent"
+                android:background="@drawable/border_page_sabtagahi"
+                android:layout_height="40dp"/>
+            <TextView android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:layout_gravity="end"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="16dp"
+                android:layout_marginTop="24dp"
+                android:text="توضیحات آگهی"/>
+            <TextView android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#666666"
+                android:textSize="16sp"
+               android:layout_marginBottom="16dp"
+                android:text="جزییات و نکات قابل توجه آگهی خود را کامل و دقیق بنویسید تا شانس موفقیت آگهی شما بیشتر شود."/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:gravity="top"
+                android:background="@drawable/border_page_sabtagahi" />
+
+            <LinearLayout android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginTop="16dp"
+                android:layout_height="wrap_content">
+                <Button android:layout_width="0dp"
+                    android:layout_weight="0.5"
+                    android:text="بعدی"
+                    android:textColor="#ffffff"
+                    android:textSize="16dp"
+                    android:background="@drawable/btn_sabt_agahi"
+                    android:id="@+id/btn_page1_sabtagahi"
+                    android:layout_height="wrap_content"/>
+                <LinearLayout android:layout_width="0dp"
+                    android:layout_weight="0.5"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

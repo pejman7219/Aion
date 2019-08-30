@@ -1,14 +1,223 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".Fragment.Fragment_mydivar">
+    android:layout_height="match_parent">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <androidx.appcompat.widget.Toolbar
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="?attr/actionBarSize"
+        android:background="#eeeeee"
+        android:gravity="start">
+        <LinearLayout android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:padding="8dp"
 
-</FrameLayout>
+            android:layout_height="?attr/actionBarSize">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="دیوار من"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </androidx.appcompat.widget.Toolbar>
+    <ScrollView android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:layout_height="wrap_content">
+            <TextView android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:paddingEnd="8dp"
+                android:layout_gravity="right"
+                android:text="شما با شماره موبایل 1234567890 وارد شده اید وآگهی های "
+               />
+            <TextView android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:paddingEnd="8dp"
+                android:layout_gravity="right"
+                android:text="ثبت شده  با این شماره را مشاهده می کنید."
+                />
+            <Button android:layout_width="wrap_content"
+                android:layout_height="32dp"
+                android:paddingLeft="16dp"
+                android:layout_marginTop="24dp"
+                android:paddingRight="16dp"
+                android:background="@drawable/shape_button_divarman"
+                android:text="خروج از حساب"/>
+            <View android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="16dp"
+                android:background="#bbbbbb"/>
+            <LinearLayout android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
+                android:gravity="right"
+                android:id="@+id/LL_agahiman"
+                android:orientation="horizontal">
+                <ImageView android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_chevron_left_black_24dp"
+                    android:id="@+id/slash_person_divarman"/>
+                <TextView android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_marginRight="8dp"
+                    android:layout_gravity="center"
+                    android:text="آگهی های من"
+                    android:textColor="#000000"
+                    android:textSize="18dp"
+                    android:id="@+id/txperson_divarman"
+                    android:layout_height="wrap_content"/>
+                <ImageView android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_person_black_24dp"
+                    android:id="@+id/imgbtn_person_divarman"/>
+            </LinearLayout>
+
+            <LinearLayout android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:id="@+id/LL_yaddasht"
+                android:layout_marginBottom="16dp"
+                android:orientation="horizontal">
+                <ImageView android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_chevron_left_black_24dp"
+                    android:id="@+id/slash_bookmark_divarman"/>
+                <TextView android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:textColor="#000000"
+                    android:layout_marginRight="8dp"
+                    android:text="یادداشت و نشان"
+                    android:textSize="18dp"
+                    android:layout_gravity="center"
+                    android:id="@+id/txbookmark_divarman"
+                    android:layout_height="wrap_content"/>
+                <ImageView android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_gravity="center"
+                    android:id="@+id/imgbtn_bookmark_divarman"
+                    android:src="@drawable/ic_bookmark_black_24dp"/>
+            </LinearLayout>
+            <LinearLayout android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:id="@+id/LL_bazdid_Akhir"
+                android:layout_marginBottom="16dp"
+                android:orientation="horizontal">
+                <ImageView android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_chevron_left_black_24dp"
+                    android:id="@+id/slash_history_divarman"/>
+                <TextView android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_marginRight="8dp"
+                    android:textColor="#000000"
+                    android:textSize="18dp"
+                    android:layout_gravity="center"
+                    android:text="بازدید های اخیر"
+                    android:id="@+id/txhistory_divarman"
+                    android:layout_height="wrap_content"/>
+                <ImageView android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_gravity="center"
+                    android:id="@+id/imgbtn_history_divarman"
+                    android:src="@drawable/ic_restore_black_24dp"/>
+            </LinearLayout>
+            <LinearLayout android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:id="@+id/LL_setting"
+                android:layout_marginBottom="16dp"
+                android:orientation="horizontal">
+                <ImageView android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_chevron_left_black_24dp"
+                    android:id="@+id/slash_setting_divarman"/>
+                <TextView android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_marginRight="8dp"
+                    android:textColor="#000000"
+                    android:text="تنظیمات"
+                    android:textSize="18dp"
+                    android:layout_gravity="center"
+                    android:id="@+id/txsetting_divarman"
+                    android:layout_height="wrap_content"/>
+                <ImageView android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_gravity="center"
+                    android:id="@+id/imgbtn_setting_divarman"
+                    android:src="@drawable/ic_settings_black_24dp"/>
+            </LinearLayout>
+
+
+            <LinearLayout android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:id="@+id/LL_poshtibani"
+                android:layout_marginBottom="16dp"
+                android:orientation="horizontal">
+                <ImageView android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_chevron_left_black_24dp"
+                    android:id="@+id/slash_poshtibani_divarman"/>
+                <TextView android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_marginRight="8dp"
+                    android:textColor="#000000"
+                    android:textSize="18dp"
+                    android:layout_gravity="center"
+                    android:text="پشتیبانی و قوانین"
+                    android:id="@+id/txposhtibani_divarman"
+                    android:layout_height="wrap_content"/>
+                <ImageView android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_gravity="center"
+                    android:id="@+id/imgbtn_poshtibani_divarman"
+                    android:src="@drawable/ic_data_usage_black_24dp"/>
+            </LinearLayout>
+            <LinearLayout android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:id="@+id/LL_darbare_Divar"
+                android:layout_marginBottom="16dp"
+                android:orientation="horizontal">
+                <ImageView android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_chevron_left_black_24dp"
+                    android:id="@+id/slash_info_divarman"/>
+                <TextView android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_marginRight="8dp"
+                    android:text="درباره دیوار"
+                    android:textSize="18dp"
+                    android:textColor="#000000"
+                    android:layout_gravity="center"
+                    android:id="@+id/txinfo_divarman"
+                    android:layout_height="wrap_content"/>
+                <ImageView android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_gravity="center"
+                    android:id="@+id/imgbtn_info_divarman"
+                    android:src="@drawable/ic_info_outline_black_24dp"/>
+            </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:id="@+id/lnrcenteramlak"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".FragmentAmlak.Fragment_Amlak">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/graylight">
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_gravity="right|center"
+            android:layout_marginRight="16dp"
+            android:id="@+id/fragment_arrow_heyvanat"
+            android:src="@drawable/ic_arrow_forward_black_24dp"></ImageView>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="16dp"
+            android:background="@color/graylight"
+            android:gravity="right"
+            android:text="حیوانات"
+            android:textColor="@color/black"
+            android:textSize="20sp"></TextView>
+
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+    <LinearLayout
+        android:id="@+id/lnrcat"
+        android:gravity="center_vertical"
+        android:layout_marginTop="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+
+
+
+        <TextView
+            android:id="@+id/txtamlak"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="16dp"
+            android:text="گربه"
+            android:textColor="@color/black"
+            android:textSize="18sp">
+
+        </TextView>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/graylight"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        ></LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lnrmuse"
+        android:gravity="center_vertical"
+        android:layout_marginTop="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:layout_marginRight="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="موش و گربه"
+            android:textColor="@color/black"
+            android:textSize="18sp">
+
+        </TextView>
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/graylight"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        ></LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lnrkhazandeh"
+        android:gravity="center_vertical"
+        android:layout_marginTop="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:layout_marginRight="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="خزنده"
+            android:textColor="@color/black"
+            android:textSize="18sp">
+
+        </TextView>
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/graylight"
+        ></LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lnrbird"
+        android:gravity="center_vertical"
+        android:layout_marginTop="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:layout_marginRight="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="پرنده"
+            android:textColor="@color/black"
+            android:textSize="18sp">
+
+        </TextView>
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/graylight"
+        ></LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lnrfish"
+                android:gravity="center_vertical"
+                android:layout_marginTop="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:layout_marginRight="16dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="ماهی"
+                    android:textColor="@color/black"
+                    android:textSize="18sp">
+
+                </TextView>
+
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/graylight"
+                ></LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lnrlavazemjanebiheyvanat"
+                android:gravity="center_vertical"
+                android:layout_marginTop="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:layout_marginRight="16dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="لوازم جانبی"
+                    android:textColor="@color/black"
+                    android:textSize="18sp">
+
+                </TextView>
+
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/graylight"
+                ></LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lnrheyvanatmazrae"
+                android:gravity="center_vertical"
+                android:layout_marginTop="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:layout_marginRight="16dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="حیوانات مزرعه"
+                    android:textColor="@color/black"
+                    android:textSize="18sp">
+
+                </TextView>
+
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/graylight"
+                ></LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lnrdog"
+                android:gravity="center_vertical"
+                android:layout_marginTop="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:layout_marginRight="16dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="سگ"
+                    android:textColor="@color/black"
+                    android:textSize="18sp">
+
+                </TextView>
+
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/graylight"
+                ></LinearLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/lnrallagahiheyvanat"
+        android:gravity="center_vertical"
+        android:layout_marginTop="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+
+
+        <TextView
+
+            android:layout_marginRight="16dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="همه آگهی های حیوانات"
+            android:textColor="@color/black"
+            android:textSize="18sp">
+
+        </TextView>
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/graylight"
+        />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

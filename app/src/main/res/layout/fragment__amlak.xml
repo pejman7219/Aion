@@ -3,50 +3,50 @@
     xmlns:tools="http://schemas.android.com/tools"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
+    android:id="@+id/lnrcenteramlak"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    tools:context=".Fragment.Fragment_Amlak">
-
-
-
-
-
+    tools:context=".FragmentAmlak.Fragment_Amlak">
 
     <androidx.appcompat.widget.Toolbar
         android:background="@color/graylight"
         android:layout_width="match_parent"
-        android:layout_height="?attr/actionBarSize"
+        android:layout_height="match_parent"
         >
-        <androidx.cardview.widget.CardView
-            app:cardBackgroundColor="@color/graylight"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
+
+        <ImageView
+
+            android:layout_marginRight="16dp"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:id="@+id/amlak_arrow"
+            android:src="@drawable/ic_arrow_forward_black_24dp"
+            android:layout_gravity="right|center"
+            >
+
+        </ImageView>
+
+
             <TextView
-                android:background="@color/graylight"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:layout_marginRight="16dp"
+                android:background="@color/graylight"
+                android:gravity="right"
+                android:textColor="@color/black"
                 android:text="املاک"
-                android:layout_marginRight="50dp"
-                android:textSize="18sp"
-                android:layout_gravity="right"
-                android:gravity="center"
-                >
+                android:textSize="20sp">
+
             </TextView>
 
-            <ImageView
-                android:layout_marginRight="8dp"
-                android:layout_width="20dp"
-                android:layout_height="20dp"
-                android:src="@drawable/right_arrow"
-                android:layout_gravity="right|center"
-                ></ImageView>
 
-        </androidx.cardview.widget.CardView>
+
+
     </androidx.appcompat.widget.Toolbar>
 
 
     <LinearLayout
-        android:id="@+id/lnrAmlak"
+        android:id="@+id/lnrforoshMaskoni"
         android:gravity="center_vertical"
         android:layout_marginTop="8dp"
         android:layout_width="match_parent"
@@ -54,10 +54,10 @@
         android:orientation="horizontal">
 
         <ImageView
-            android:layout_width="18dp"
-            android:layout_height="15dp"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
             android:layout_marginLeft="20dp"
-            android:src="@drawable/left_arrow"
+            android:src="@drawable/ic_keyboard_arrow_left_black_24dp"
 
             >
 
@@ -65,9 +65,9 @@
 
         <TextView
             android:id="@+id/txtamlak"
-            android:layout_marginRight="16dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginRight="16dp"
             android:text="فروش مسکونی(آپارتمان,خانه,زمین)"
             android:textColor="@color/black"
             android:textSize="18sp">
@@ -75,28 +75,27 @@
         </TextView>
 
 
-
     </LinearLayout>
-    <LinearLayout
+    <View
         android:layout_width="match_parent"
-        android:layout_height="2dp"
+        android:layout_height="1dp"
         android:background="@color/graylight"
         android:layout_marginRight="20dp"
         android:layout_marginLeft="20dp"
-        ></LinearLayout>
+        ></View>
 
     <LinearLayout
-
+        android:id="@+id/lnrEjarehMaskoni"
         android:gravity="center_vertical"
         android:layout_marginTop="8dp"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:orientation="horizontal">
         <ImageView
-            android:layout_width="18dp"
-            android:layout_height="15dp"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
             android:layout_marginLeft="20dp"
-            android:src="@drawable/left_arrow"
+            android:src="@drawable/ic_keyboard_arrow_left_black_24dp"
 
             >
 
@@ -116,26 +115,26 @@
 
 
     </LinearLayout>
-    <LinearLayout
+    <View
         android:layout_width="match_parent"
-        android:layout_height="2dp"
+        android:layout_height="1dp"
         android:background="@color/graylight"
         android:layout_marginRight="20dp"
         android:layout_marginLeft="20dp"
-        ></LinearLayout>
+        ></View>
 
     <LinearLayout
-
+        android:id="@+id/lnrFroshTejari"
         android:gravity="center_vertical"
         android:layout_marginTop="8dp"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:orientation="horizontal">
         <ImageView
-            android:layout_width="18dp"
-            android:layout_height="15dp"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
             android:layout_marginLeft="20dp"
-            android:src="@drawable/left_arrow"
+            android:src="@drawable/ic_keyboard_arrow_left_black_24dp"
 
             >
 
@@ -154,26 +153,26 @@
 
 
     </LinearLayout>
-    <LinearLayout
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/graylight"
         android:layout_marginRight="20dp"
         android:layout_marginLeft="20dp"
-        android:layout_width="match_parent"
-        android:layout_height="2dp"
-        android:background="@color/graylight"
-        ></LinearLayout>
+        ></View>
 
     <LinearLayout
-
+        android:id="@+id/lnrEjarehTejari"
         android:gravity="center_vertical"
         android:layout_marginTop="8dp"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:orientation="horizontal">
         <ImageView
-            android:layout_width="18dp"
-            android:layout_height="15dp"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
             android:layout_marginLeft="20dp"
-            android:src="@drawable/left_arrow"
+            android:src="@drawable/ic_keyboard_arrow_left_black_24dp"
 
             >
 
@@ -190,26 +189,26 @@
         </TextView>
 
     </LinearLayout>
-    <LinearLayout
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/graylight"
         android:layout_marginRight="20dp"
         android:layout_marginLeft="20dp"
-        android:layout_width="match_parent"
-        android:layout_height="2dp"
-        android:background="@color/graylight"
-        ></LinearLayout>
+        ></View>
 
     <LinearLayout
-
+        android:id="@+id/lnrEjarehKotahModat"
         android:gravity="center_vertical"
         android:layout_marginTop="8dp"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:orientation="horizontal">
         <ImageView
-            android:layout_width="18dp"
-            android:layout_height="15dp"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
             android:layout_marginLeft="20dp"
-            android:src="@drawable/left_arrow"
+            android:src="@drawable/ic_keyboard_arrow_left_black_24dp"
 
             >
 
@@ -227,26 +226,26 @@
 
 
     </LinearLayout>
-    <LinearLayout
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/graylight"
         android:layout_marginRight="20dp"
         android:layout_marginLeft="20dp"
-        android:layout_width="match_parent"
-        android:layout_height="2dp"
-        android:background="@color/graylight"
-        ></LinearLayout>
+        ></View>
 
     <LinearLayout
-
+        android:id="@+id/lnrKhadamatAmlak"
         android:gravity="center_vertical"
         android:layout_marginTop="8dp"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:orientation="horizontal">
         <ImageView
-            android:layout_width="18dp"
-            android:layout_height="15dp"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
             android:layout_marginLeft="20dp"
-            android:src="@drawable/left_arrow"
+            android:src="@drawable/ic_keyboard_arrow_left_black_24dp"
 
             >
 
@@ -263,26 +262,26 @@
         </TextView>
 
     </LinearLayout>
-    <LinearLayout
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/graylight"
         android:layout_marginRight="20dp"
         android:layout_marginLeft="20dp"
-        android:layout_width="match_parent"
-        android:layout_height="2dp"
-        android:background="@color/graylight"
-        ></LinearLayout>
+        ></View>
 
     <LinearLayout
-
+        android:id="@+id/lnrAllAgahi"
         android:gravity="center_vertical"
         android:layout_marginTop="8dp"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:orientation="horizontal">
         <ImageView
-            android:layout_width="18dp"
-            android:layout_height="15dp"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
             android:layout_marginLeft="20dp"
-            android:src="@drawable/left_arrow"
+            android:src="@drawable/ic_keyboard_arrow_left_black_24dp"
 
             >
 
@@ -305,23 +304,18 @@
             android:layout_marginRight="8dp"
             android:layout_width="22dp"
             android:layout_height="22dp"
-            android:src="@drawable/commercial_buldings">
+            android:src="@drawable/ic_location_city_black_24dp">
 
         </ImageView>
 
     </LinearLayout>
 
-    <LinearLayout
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/graylight"
         android:layout_marginRight="20dp"
         android:layout_marginLeft="20dp"
-        android:layout_width="match_parent"
-        android:layout_height="2dp"
-        android:background="@color/graylight"
-        ></LinearLayout>
-
-
-
-
-
+        ></View>
 
 </LinearLayout>

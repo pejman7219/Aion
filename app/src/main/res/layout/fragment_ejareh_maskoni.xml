@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".FragmentAmlak.Fragment_Amlak">
+
+    <androidx.appcompat.widget.Toolbar
+        android:background="@color/graylight"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        >
+
+        <ImageView
+            android:layout_marginRight="16dp"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:id="@+id/arrow_ejare_maskoni"
+            android:src="@drawable/ic_arrow_forward_black_24dp"
+            android:layout_gravity="right"
+            >
+
+        </ImageView>
+
+        <TextView
+            android:layout_marginRight="16dp"
+            android:background="@color/graylight"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textColor="@color/black"
+            android:text="اجاره مسکونی(آپارتمان,خانه,زمین)"
+            android:textSize="18sp"
+            android:layout_gravity="right"
+            android:gravity="center"
+            >
+        </TextView>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <LinearLayout
+
+        android:id="@+id/lnrAAparteman"
+        android:gravity="center_vertical"
+        android:layout_marginTop="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="16dp"
+            android:text="آپارتمان"
+            android:textColor="@color/black"
+            android:textSize="18sp">
+
+        </TextView>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/graylight"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        ></LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lnrKkhane"
+        android:gravity="center_vertical"
+        android:layout_marginTop="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="16dp"
+            android:text="خانه و ویلا"
+            android:textColor="@color/black"
+            android:textSize="18sp">
+
+        </TextView>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/graylight"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        ></LinearLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/lnrAAgahi"
+        android:gravity="center_vertical"
+        android:layout_marginTop="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+
+
+
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="16dp"
+            android:text="همه آگهی های اجاره مسکونی (آپارتمان)"
+            android:textColor="@color/black"
+            android:textSize="18sp">
+
+        </TextView>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/graylight"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        ></LinearLayout>
+
+</LinearLayout>

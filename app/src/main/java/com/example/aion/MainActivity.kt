@@ -1,76 +1,208 @@
 package com.example.aion
 
+import android.app.Activity
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
 import android.widget.Toast
-import com.example.aion.Adapter.AdapterHome
+import androidx.fragment.app.FragmentManager
+import com.example.aion.Activity.ActivitySabtAgahi
+import com.example.aion.FragmentMain.Fragment_chat
 import kotlinx.android.synthetic.main.activity_main.*
-import android.R
-import androidx.core.app.ComponentActivity
-import androidx.core.app.ComponentActivity.ExtraData
-import androidx.core.content.ContextCompat.getSystemService
-import android.icu.lang.UCharacter.GraphemeClusterBreak.T
-import com.example.aion.Fragment.*
-
+import com.example.aion.FragmentMain.Fragment_home
+import com.example.aion.FragmentMain.Fragment_mydivar
+import com.example.aion.Fragment_category.Fragment_categury
+import com.example.aion.NetCheck.NetCheck
 
 class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(com.example.aion.R.layout.activity_main)
+        setContentView(R.layout.activity_main)
+
+        val netCheck=NetCheck(applicationContext)
+
+        buttomnavin.selectedItemId= R.id.divarHome
+        val fragment = Fragment_home()
+        val fragmentManager = supportFragmentManager
+        val fragmentTransaction = fragmentManager.beginTransaction()
+        fragmentTransaction.add(R.id.framcenter, fragment)
+        fragmentTransaction.addToBackStack("home")
+        fragmentTransaction.commit()
+
+        if (!netCheck.NetStatus())
+        {
+            main_disconnect_layout.visibility= View.VISIBLE
+        }
 
 
-        //view_pager.adapter = AdapterHome(supportFragmentManager)
+        main_button_disconnect.setOnClickListener {
+
+            if (netCheck.NetStatus())
+            {
+                main_disconnect_layout.visibility= View.GONE
+            }
+            else
+            {
+                main_disconnect_layout.visibility= View.VISIBLE
+            }
+        }
 
         buttomnavin.setOnNavigationItemSelectedListener {item ->
-
             when(item.itemId)
             {
-                com.example.aion.R.id.divarHome ->{
+                R.id.divarHome -> {
 
-                    val fragment = Fragment_home()
-                    val fragmentManager = this.getSupportFragmentManager()
-                    val fragmentTransaction = fragmentManager.beginTransaction()
-                    fragmentTransaction.replace( com.example.aion.R.id.framcenter, fragment)
-                    fragmentTransaction.addToBackStack(null)
-                    fragmentTransaction.commit()
+                    if (netCheck.NetStatus())
+                    {
+
+                        main_disconnect_layout.visibility= View.GONE
+
+                        if (fragmentManager.backStackEntryCount != 1)
+                        {
+                            for (i in 0 until fragmentManager.backStackEntryCount -1)
+                            {
+                                fragmentManager.popBackStack()
+                            }
+
+//                        val fragment = Fragment_home()
+//                        val fragmentManager = this.supportFragmentManager
+//                        val fragmentTransaction = fragmentManager.beginTransaction()
+//                        fragmentTransaction.replace(R.id.framcenter, fragment)
+//                        fragmentTransaction.addToBackStack("divarHome")
+//                        fragmentTransaction.commit()
+                        }
+                    }
+                    else
+                    {
+                        for (i in 0 until fragmentManager.backStackEntryCount-1)
+                        {
+                            fragmentManager.popBackStack()
+                        }
+
+                        main_disconnect_layout.visibility= View.VISIBLE
+                    }
                 }
 
-                com.example.aion.R.id.categuryHome ->{
-//                    view_pager.setCurrentItem(1,true)
-                    val fragment = Fragment_categury()
-                    val fragmentManager = this.getSupportFragmentManager()
-                    val fragmentTransaction = fragmentManager.beginTransaction()
-                    fragmentTransaction.replace( com.example.aion.R.id.framcenter, fragment)
-                    fragmentTransaction.addToBackStack(null)
-                    fragmentTransaction.commit()
+                R.id.categuryHome ->{
+                    if (netCheck.NetStatus())
+                    {
+                        main_disconnect_layout.visibility= View.GONE
+
+                        if (fragmentManager.backStackEntryCount == 1){
+
+                            val fragment = Fragment_categury()
+                            val fragmentManager = this.supportFragmentManager
+                            val fragmentTransaction = fragmentManager.beginTransaction()
+                            fragmentTransaction.replace(R.id.framcenter, fragment)
+                            fragmentTransaction.addToBackStack("category")
+                            fragmentTransaction.commit()
+                        }
+
+                        else if (fragmentManager.backStackEntryCount >= 2 && !(fragmentManager.getBackStackEntryAt(1).name.equals("category")))
+                        {
+                            for (i in 0 until fragmentManager.backStackEntryCount -1)
+                            {
+                                fragmentManager.popBackStack()
+                            }
+
+                            val fragment = Fragment_categury()
+                            val fragmentManager = this.supportFragmentManager
+                            val fragmentTransaction = fragmentManager.beginTransaction()
+                            fragmentTransaction.replace(R.id.framcenter, fragment)
+                            fragmentTransaction.addToBackStack("category")
+                            fragmentTransaction.commit()
+                        }
+                    }
+                    else
+                    {
+
+                        for (i in 0 until fragmentManager.backStackEntryCount-1)
+                        {
+                            fragmentManager.popBackStack()
+                        }
+
+                        main_disconnect_layout.visibility= View.VISIBLE
+                    }
+
+
+
+                    //size of backStack
+//                    fragmentManager.backStackEntryCount
+                    //access to backStack item
+//                    fragmentManager.getBackStackEntryAt(0).name
+
+                    // remove item of backStack
+//                    fragmentManager.popBackStack()
+//                    fragmentManager.popBackStack("fragment name",FragmentManager.POP_BACK_STACK_INCLUSIVE)
 
                 }
-                com.example.aion.R.id.newaddHome ->{
-                    val fragment = Fragment_new_add()
-                    val fragmentManager = this.getSupportFragmentManager()
-                    val fragmentTransaction = fragmentManager.beginTransaction()
-                    fragmentTransaction.replace( com.example.aion.R.id.framcenter, fragment)
-                    fragmentTransaction.addToBackStack(null)
-                    fragmentTransaction.commit()
+                R.id.newaddHome ->{
+
+                    var gotoSabtAgahi:Intent
+                    gotoSabtAgahi = Intent(this,ActivitySabtAgahi::class.java)
+                    startActivityForResult(gotoSabtAgahi,4545)
+                    //startActivity(Intent(this, ActivitySabtAgahi::class.java))
 
                 }
-                com.example.aion.R.id.chatHome ->{
-                    val fragment = Fragment_chat()
-                    val fragmentManager = this.getSupportFragmentManager()
-                    val fragmentTransaction = fragmentManager.beginTransaction()
-                    fragmentTransaction.replace( com.example.aion.R.id.framcenter, fragment)
-                    fragmentTransaction.addToBackStack(null)
-                    fragmentTransaction.commit()
+                R.id.chatHome ->
+
+                {
+                    main_disconnect_layout.visibility= View.GONE
+
+                    if (fragmentManager.backStackEntryCount == 1)
+                    {
+                        val fragment = Fragment_chat()
+                        val fragmentManager = this.supportFragmentManager
+                        val fragmentTransaction = fragmentManager.beginTransaction()
+                        fragmentTransaction.replace(R.id.framcenter, fragment)
+                        fragmentTransaction.addToBackStack("chatHome")
+                        fragmentTransaction.commit()
+                    }
+                    else if (fragmentManager.backStackEntryCount >= 2 && !(fragmentManager.getBackStackEntryAt(1).name.equals("chatHome")))
+                    {
+                        for (i in 0 until fragmentManager.backStackEntryCount - 1)
+                        {
+                            fragmentManager.popBackStack()
+                        }
+
+                        val fragment = Fragment_chat()
+                        val fragmentManager = this.supportFragmentManager
+                        val fragmentTransaction = fragmentManager.beginTransaction()
+                        fragmentTransaction.replace(R.id.framcenter, fragment)
+                        fragmentTransaction.addToBackStack("chatHome")
+                        fragmentTransaction.commit()
+                    }
 
                 }
-                com.example.aion.R.id.divarHome ->{
-                    val fragment = Fragment_mydivar()
-                    val fragmentManager = this.getSupportFragmentManager()
-                    val fragmentTransaction = fragmentManager.beginTransaction()
-                    fragmentTransaction.replace( com.example.aion.R.id.framcenter, fragment)
-                    fragmentTransaction.addToBackStack(null)
-                    fragmentTransaction.commit()
+                R.id.mydivarHome ->{
+
+                    main_disconnect_layout.visibility= View.GONE
+
+                    if (fragmentManager.backStackEntryCount == 1)
+                    {
+                        val fragment = Fragment_mydivar()
+                        val fragmentManager = this.supportFragmentManager
+                        val fragmentTransaction = fragmentManager.beginTransaction()
+                        fragmentTransaction.replace(R.id.framcenter, fragment)
+                        fragmentTransaction.addToBackStack("mydivarHome")
+                        fragmentTransaction.commit()
+                    }
+                    else if (fragmentManager.backStackEntryCount >= 2 && !(fragmentManager.getBackStackEntryAt(1).name.equals("mydivarHome")))
+                    {
+                        for (i in 0 until fragmentManager.backStackEntryCount - 1)
+                        {
+                            fragmentManager.popBackStack()
+                        }
+
+                        val fragment = Fragment_mydivar()
+                        val fragmentManager = this.supportFragmentManager
+                        val fragmentTransaction = fragmentManager.beginTransaction()
+                        fragmentTransaction.replace(R.id.framcenter, fragment)
+                        fragmentTransaction.addToBackStack("mydivarHome")
+                        fragmentTransaction.commit()
+                    }
                 }
             }
 
@@ -78,6 +210,58 @@ class MainActivity : AppCompatActivity() {
 
         }
 
+
+
+
+    }
+
+    override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
+        super.onActivityResult(requestCode, resultCode, data)
+        /*if(resultCode== Activity.RESULT_OK){
+
+        }
+*/
+        if(requestCode==4545){
+            buttomnavin.selectedItemId= R.id.divarHome
+            val fragment = Fragment_home()
+            val fragmentManager = this.supportFragmentManager
+            val fragmentTransaction = fragmentManager.beginTransaction()
+            fragmentTransaction.replace(R.id.framcenter, fragment)
+            //    fragmentTransaction.addToBackStack(null)
+            fragmentTransaction.commit()
+        }
+    }
+
+    override fun onBackPressed()
+    {
+
+        val fragmentManager = this.supportFragmentManager
+
+        if (fragmentManager.backStackEntryCount == 2)
+        {
+            for (i in 0 until fragmentManager.backStackEntryCount)
+            {
+                fragmentManager.popBackStack()
+            }
+            buttomnavin.selectedItemId = R.id.divarHome
+
+            val fragment = Fragment_home()
+            val fragmentManager = supportFragmentManager
+            val fragmentTransaction = fragmentManager.beginTransaction()
+            fragmentTransaction.add(R.id.framcenter, fragment)
+            fragmentTransaction.addToBackStack("home")
+            fragmentTransaction.commit()
+
+        }
+        else if (fragmentManager.backStackEntryCount > 2)
+        {
+            super.onBackPressed()
+        }
+        else
+        {
+            super.onBackPressed()
+            finish()
+        }
 
 
     }

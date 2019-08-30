@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:id="@+id/lnrcategury"
-    tools:context=".Fragment.Fragment_categury">
+    tools:context=".Fragment_category.Fragment_categury">
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbarCategury"
@@ -16,6 +16,7 @@
 
         >
 
+
         <TextView
 
             android:layout_marginRight="16dp"
@@ -23,7 +24,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="دسته بندی آگهی ها "
-            android:textSize="22dp">
+            android:textSize="20dp">
 
         </TextView>
 
@@ -50,8 +51,8 @@
 
                     android:layout_width="0dp"
                     android:layout_weight="1"
-                    android:layout_height="15dp"
-                    android:src="@drawable/left_arrow"
+                    android:layout_height="25dp"
+                    android:src="@drawable/ic_keyboard_arrow_left_black_24dp"
                     android:layout_marginLeft="10dp"
 
                     >
@@ -78,22 +79,22 @@
                     android:layout_weight="1"
                     android:layout_height="22dp"
                     android:layout_marginRight="16dp"
-                    android:src="@drawable/commercial_buldings"
+                    android:src="@drawable/ic_location_city_black_24dp"
                     >
 
                 </ImageView>
 
             </LinearLayout>
-            <LinearLayout
+            <View
                 android:layout_width="match_parent"
                 android:layout_height="2dp"
                 android:background="@color/graylight"
                 android:layout_marginRight="20dp"
                 android:layout_marginLeft="20dp"
-                ></LinearLayout>
+                />
 
             <LinearLayout
-
+                android:id="@+id/lnrvasayelnaghlieh"
                 android:gravity="center_vertical"
                 android:layout_marginTop="8dp"
                 android:layout_width="match_parent"
@@ -103,8 +104,8 @@
 
                     android:layout_width="0dp"
                     android:layout_weight="1"
-                    android:layout_height="15dp"
-                    android:src="@drawable/left_arrow"
+                    android:layout_height="25dp"
+                    android:src="@drawable/ic_keyboard_arrow_left_black_24dp"
                     android:layout_marginLeft="10dp"
 
                     >
@@ -130,7 +131,7 @@
                     android:layout_weight="1"
                     android:layout_height="22dp"
                     android:layout_marginRight="16dp"
-                    android:src="@drawable/car_front"
+                    android:src="@drawable/ic_directions_car_black_24dp"
                     >
 
                 </ImageView>
@@ -145,7 +146,7 @@
                 ></LinearLayout>
 
             <LinearLayout
-
+                android:id="@+id/lnrLavazemElectronic"
                 android:gravity="center_vertical"
                 android:layout_marginTop="8dp"
                 android:layout_width="match_parent"
@@ -155,8 +156,8 @@
 
                     android:layout_width="0dp"
                     android:layout_weight="1"
-                    android:layout_height="15dp"
-                    android:src="@drawable/left_arrow"
+                    android:layout_height="25dp"
+                    android:src="@drawable/ic_keyboard_arrow_left_black_24dp"
                     android:layout_marginLeft="10dp"
 
                     >
@@ -182,7 +183,7 @@
                     android:layout_weight="1"
                     android:layout_height="22dp"
                     android:layout_marginRight="16dp"
-                    android:src="@drawable/smartphone_screen"
+                    android:src="@drawable/ic_phone_android_black_24dp"
                     >
 
                 </ImageView>
@@ -197,7 +198,7 @@
                 ></LinearLayout>
 
             <LinearLayout
-
+                android:id="@+id/lnrMarbutBeKhaneh"
                 android:gravity="center_vertical"
                 android:layout_marginTop="8dp"
                 android:layout_width="match_parent"
@@ -207,8 +208,8 @@
 
                     android:layout_width="0dp"
                     android:layout_weight="1"
-                    android:layout_height="15dp"
-                    android:src="@drawable/left_arrow"
+                    android:layout_height="25dp"
+                    android:src="@drawable/ic_keyboard_arrow_left_black_24dp"
                     android:layout_marginLeft="10dp"
 
                     >
@@ -234,7 +235,7 @@
                     android:layout_weight="1"
                     android:layout_height="22dp"
                     android:layout_marginRight="16dp"
-                    android:src="@drawable/icon"
+                    android:src="@drawable/lamp"
                     >
 
                 </ImageView>
@@ -249,7 +250,7 @@
                 ></LinearLayout>
 
             <LinearLayout
-
+                android:id="@+id/lnrKhadamat"
                 android:gravity="center_vertical"
                 android:layout_marginTop="8dp"
                 android:layout_width="match_parent"
@@ -259,8 +260,8 @@
 
                     android:layout_width="0dp"
                     android:layout_weight="1"
-                    android:layout_height="15dp"
-                    android:src="@drawable/left_arrow"
+                    android:layout_height="25dp"
+                    android:src="@drawable/ic_keyboard_arrow_left_black_24dp"
                     android:layout_marginLeft="10dp"
 
                     >
@@ -283,11 +284,10 @@
 
 
                     android:layout_width="0dp"
-                    android:layout_weight="1"
                     android:layout_height="22dp"
                     android:layout_marginRight="16dp"
-                    android:src="@drawable/paint_roller"
-                    >
+                    android:layout_weight="1"
+                    android:src="@drawable/ic_format_paint_black_24dp">
 
                 </ImageView>
 
@@ -301,7 +301,7 @@
                 ></LinearLayout>
 
             <LinearLayout
-
+                android:id="@+id/lnrVasayelShakhsi"
                 android:gravity="center_vertical"
                 android:layout_marginTop="8dp"
                 android:layout_width="match_parent"
@@ -311,8 +311,8 @@
 
                     android:layout_width="0dp"
                     android:layout_weight="1"
-                    android:layout_height="15dp"
-                    android:src="@drawable/left_arrow"
+                    android:layout_height="25dp"
+                    android:src="@drawable/ic_keyboard_arrow_left_black_24dp"
                     android:layout_marginLeft="10dp"
 
                     >
@@ -338,7 +338,7 @@
                     android:layout_weight="1"
                     android:layout_height="22dp"
                     android:layout_marginRight="16dp"
-                    android:src="@drawable/watch"
+                    android:src="@drawable/ic_watch_black_24dp"
                     >
 
                 </ImageView>
@@ -353,7 +353,7 @@
                 ></LinearLayout>
 
             <LinearLayout
-
+                android:id="@+id/lnrSargarmivaFraghat"
                 android:gravity="center_vertical"
                 android:layout_marginTop="8dp"
                 android:layout_width="match_parent"
@@ -363,8 +363,8 @@
 
                     android:layout_width="0dp"
                     android:layout_weight="1"
-                    android:layout_height="15dp"
-                    android:src="@drawable/left_arrow"
+                    android:layout_height="25dp"
+                    android:src="@drawable/ic_keyboard_arrow_left_black_24dp"
                     android:layout_marginLeft="10dp"
 
                     >
@@ -390,7 +390,7 @@
                     android:layout_weight="1"
                     android:layout_height="22dp"
                     android:layout_marginRight="16dp"
-                    android:src="@drawable/two_dices"
+                    android:src="@drawable/ic_two_dices"
                     >
 
                 </ImageView>
@@ -405,7 +405,7 @@
                 ></LinearLayout>
 
             <LinearLayout
-
+                android:id="@+id/lnrejtemaei"
                 android:gravity="center_vertical"
                 android:layout_marginTop="8dp"
                 android:layout_width="match_parent"
@@ -415,8 +415,8 @@
 
                     android:layout_width="0dp"
                     android:layout_weight="1"
-                    android:layout_height="15dp"
-                    android:src="@drawable/left_arrow"
+                    android:layout_height="25dp"
+                    android:src="@drawable/ic_keyboard_arrow_left_black_24dp"
                     android:layout_marginLeft="10dp"
 
                     >
@@ -442,7 +442,7 @@
                     android:layout_weight="1"
                     android:layout_height="22dp"
                     android:layout_marginRight="16dp"
-                    android:src="@drawable/hobbies"
+                    android:src="@drawable/ic_people_black_24dp"
                     >
 
                 </ImageView>
@@ -457,30 +457,31 @@
                 ></LinearLayout>
 
             <LinearLayout
-
-                android:gravity="center_vertical"
-                android:layout_marginTop="8dp"
+                android:id="@+id/lnrkasbokar"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
+                android:layout_marginTop="8dp"
+                android:gravity="center_vertical"
                 android:orientation="horizontal">
+
                 <ImageView
 
                     android:layout_width="0dp"
-                    android:layout_weight="1"
-                    android:layout_height="15dp"
-                    android:src="@drawable/left_arrow"
+                    android:layout_height="25dp"
                     android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/ic_keyboard_arrow_left_black_24dp"
 
                     >
 
                 </ImageView>
 
                 <TextView
-                    android:layout_marginRight="16dp"
                     android:layout_width="0dp"
-                    android:layout_weight="3"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="95dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_weight="3"
                     android:text="برای کسب و کار"
                     android:textColor="@color/black"
                     android:textSize="18sp">
@@ -491,15 +492,15 @@
 
 
                     android:layout_width="0dp"
-                    android:layout_weight="1"
                     android:layout_height="22dp"
                     android:layout_marginRight="16dp"
-                    android:src="@drawable/manager"
-                    >
+                    android:layout_weight="1"
+                    android:src="@drawable/ic_manager">
 
                 </ImageView>
 
             </LinearLayout>
+
             <LinearLayout
                 android:layout_marginRight="20dp"
                 android:layout_marginLeft="20dp"
@@ -509,7 +510,7 @@
                 ></LinearLayout>
 
             <LinearLayout
-
+                android:id="@+id/lnrestekhdam"
                 android:gravity="center_vertical"
                 android:layout_marginTop="8dp"
                 android:layout_width="match_parent"
@@ -519,8 +520,8 @@
 
                     android:layout_width="0dp"
                     android:layout_weight="1"
-                    android:layout_height="15dp"
-                    android:src="@drawable/left_arrow"
+                    android:layout_height="25dp"
+                    android:src="@drawable/ic_keyboard_arrow_left_black_24dp"
                     android:layout_marginLeft="10dp"
 
                     >
@@ -546,7 +547,7 @@
                     android:layout_weight="1"
                     android:layout_height="22dp"
                     android:layout_marginRight="16dp"
-                    android:src="@drawable/user_home"
+                    android:src="@drawable/ic_business_center_black_24dp"
                     >
 
                 </ImageView>

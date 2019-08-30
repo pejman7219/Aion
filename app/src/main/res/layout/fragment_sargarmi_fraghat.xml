@@ -1,0 +1,414 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/lnrcategury"
+    tools:context=".Fragment_category.Fragment_categury">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarCategury"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/graylight"
+
+
+        >
+
+
+        <TextView
+
+            android:layout_marginRight="16dp"
+            android:textColor="@color/black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="سرگرمی و فراغت"
+            android:textSize="20dp">
+
+        </TextView>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:id="@+id/lnrblit"
+                android:gravity="center_vertical"
+                android:layout_marginTop="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal">
+                <ImageView
+
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="25dp"
+                    android:src="@drawable/ic_keyboard_arrow_left_black_24dp"
+                    android:layout_marginLeft="10dp"
+
+                    >
+
+                </ImageView>
+
+                <TextView
+                    android:id="@+id/txtamlak"
+                    android:layout_marginRight="16dp"
+                    android:layout_width="0dp"
+                    android:layout_weight="3"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="95dp"
+                    android:text="بلیط"
+                    android:textColor="@color/black"
+                    android:textSize="18sp">
+
+                </TextView>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/graylight"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                ></LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lnrtor"
+                android:gravity="center_vertical"
+                android:layout_marginTop="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_marginRight="16dp"
+                    android:layout_width="0dp"
+                    android:layout_weight="3"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="95dp"
+                    android:text="تور و چارتر"
+                    android:textColor="@color/black"
+                    android:textSize="18sp">
+
+                </TextView>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/graylight"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                ></LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lnrketab"
+                android:gravity="center_vertical"
+                android:layout_marginTop="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal">
+                <ImageView
+
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="25dp"
+                    android:src="@drawable/ic_keyboard_arrow_left_black_24dp"
+                    android:layout_marginLeft="10dp"
+
+                    >
+
+                </ImageView>
+
+                <TextView
+                    android:layout_marginRight="16dp"
+                    android:layout_width="0dp"
+                    android:layout_weight="3"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="95dp"
+                    android:text="کتاب و مجله"
+                    android:textColor="@color/black"
+                    android:textSize="18sp">
+
+                </TextView>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/graylight"
+                ></LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lnrdocharkheh"
+                android:gravity="center_vertical"
+                android:layout_marginTop="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_marginRight="16dp"
+                    android:layout_width="0dp"
+                    android:layout_weight="3"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="95dp"
+                    android:text="دوچرخه/اسکیت/اسکوتر"
+                    android:textColor="@color/black"
+                    android:textSize="18sp">
+
+                </TextView>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/graylight"
+                ></LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lnrheyvanat"
+                android:gravity="center_vertical"
+                android:layout_marginTop="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal">
+                <ImageView
+
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="25dp"
+                    android:src="@drawable/ic_keyboard_arrow_left_black_24dp"
+                    android:layout_marginLeft="10dp"
+
+                    >
+
+                </ImageView>
+
+                <TextView
+                    android:layout_marginRight="16dp"
+                    android:layout_width="0dp"
+                    android:layout_weight="3"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="95dp"
+                    android:text="حیوانات"
+                    android:textColor="@color/black"
+                    android:textSize="18sp">
+
+                </TextView>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/graylight"
+                ></LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lnrkolecsioni"
+                android:gravity="center_vertical"
+                android:layout_marginTop="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal">
+                <ImageView
+
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="25dp"
+                    android:src="@drawable/ic_keyboard_arrow_left_black_24dp"
+                    android:layout_marginLeft="10dp"
+
+                    >
+
+                </ImageView>
+
+                <TextView
+                    android:layout_marginRight="16dp"
+                    android:layout_width="0dp"
+                    android:layout_weight="3"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="95dp"
+                    android:text="کلکسونی و سرگرمی"
+                    android:textColor="@color/black"
+                    android:textSize="18sp">
+
+                </TextView>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/graylight"
+                ></LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lnralatmosighi"
+                android:gravity="center_vertical"
+                android:layout_marginTop="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal">
+                <ImageView
+
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="25dp"
+                    android:src="@drawable/ic_keyboard_arrow_left_black_24dp"
+                    android:layout_marginLeft="10dp"
+
+                    >
+
+                </ImageView>
+
+                <TextView
+                    android:layout_marginRight="16dp"
+                    android:layout_width="0dp"
+                    android:layout_weight="3"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="95dp"
+                    android:text="آلات موسیقی"
+                    android:textColor="@color/black"
+                    android:textSize="18sp">
+
+                </TextView>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/graylight"
+                ></LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lnrvarzeshvatanasobandam"
+                android:gravity="center_vertical"
+                android:layout_marginTop="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal">
+                <ImageView
+
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="25dp"
+                    android:src="@drawable/ic_keyboard_arrow_left_black_24dp"
+                    android:layout_marginLeft="10dp"
+
+                    >
+
+                </ImageView>
+
+                <TextView
+                    android:layout_marginRight="16dp"
+                    android:layout_width="0dp"
+                    android:layout_weight="3"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="95dp"
+                    android:text="ورزش و تناسب اندام"
+                    android:textColor="@color/black"
+                    android:textSize="18sp">
+
+                </TextView>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/graylight"
+                ></LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/asbabbazi"
+                android:gravity="center_vertical"
+                android:layout_marginTop="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_marginRight="16dp"
+                    android:layout_width="0dp"
+                    android:layout_weight="3"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="95dp"
+                    android:text="اسباب بازی"
+                    android:textColor="@color/black"
+                    android:textSize="18sp">
+
+                </TextView>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/graylight"
+                ></LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lnrAllAgahisargarmivafarghat"
+                android:gravity="center_vertical"
+                android:layout_marginTop="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal">
+
+                <TextView
+
+                    android:layout_marginRight="16dp"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="همه آگهی های سرگرمی و فزاغت"
+                    android:textColor="@color/black"
+                    android:textSize="18sp">
+
+                </TextView>
+
+                <ImageView
+
+                    android:layout_marginRight="8dp"
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:src="@drawable/ic_location_city_black_24dp">
+
+                </ImageView>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/graylight"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                ></View>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

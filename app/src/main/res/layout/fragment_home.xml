@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:id="@+id/LL_fragmenthome"
-    tools:context=".Fragment.Fragment_home">
+    tools:context=".FragmentMain.Fragment_home">
 
     <androidx.appcompat.widget.Toolbar
 
@@ -47,7 +47,15 @@
 
     </androidx.appcompat.widget.Toolbar>
 
-    <HorizontalScrollView
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/graylight"
+        android:id="@+id/recycel_view">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <!--<HorizontalScrollView
 
 
         android:background="@color/graylight"
@@ -328,7 +336,7 @@
                     android:layout_width="15dp"
                     android:layout_height="15dp"
                     android:layout_gravity="center_vertical"
-                    android:src="@drawable/list11">
+                    android:src="@drawable/ic_list_black_24dp">
 
                 </ImageView>
 
@@ -362,7 +370,7 @@
                     android:layout_width="15dp"
                     android:layout_height="15dp"
                     android:layout_gravity="center_vertical"
-                    android:src="@drawable/filter_tool_black_shape">
+                    android:src="@drawable/ic_filter_tool_black_shape">
 
                 </ImageView>
 
@@ -385,7 +393,7 @@
         </LinearLayout>
 
 
-    </HorizontalScrollView>
+    </HorizontalScrollView>-->
 
 
 </LinearLayout>

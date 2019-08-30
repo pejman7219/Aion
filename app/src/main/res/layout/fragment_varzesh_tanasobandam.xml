@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:id="@+id/lnrcenteramlak"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".FragmentAmlak.Fragment_Amlak">
+
+    <androidx.appcompat.widget.Toolbar
+        android:background="@color/graylight"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <ImageView
+            android:layout_marginRight="16dp"
+            android:layout_width="25dp"
+            android:id="@+id/arrow_fragment_varzesh_tanasbadam"
+            android:layout_height="25dp"
+            android:src="@drawable/ic_arrow_forward_black_24dp"
+            android:layout_gravity="right|center"
+            ></ImageView>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="16dp"
+            android:background="@color/graylight"
+            android:gravity="right"
+            android:textColor="@color/black"
+            android:text="ورزش و تناسب اندام"
+            android:textSize="20sp"></TextView>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+
+            >
+
+
+
+
+
+
+
+    <LinearLayout
+        android:id="@+id/lnrvarzeshhaytopi"
+        android:gravity="center_vertical"
+        android:layout_marginTop="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+
+
+
+        <TextView
+            android:id="@+id/txtamlak"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="16dp"
+            android:text="ورزش های توپی"
+            android:textColor="@color/black"
+            android:textSize="18sp">
+
+        </TextView>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/graylight"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        ></LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lnrkohnavardi"
+        android:gravity="center_vertical"
+        android:layout_marginTop="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:layout_marginRight="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="کوهنوردی و کمپینگ"
+            android:textColor="@color/black"
+            android:textSize="18sp">
+
+        </TextView>
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/graylight"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        ></LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lnrghavasi"
+        android:gravity="center_vertical"
+        android:layout_marginTop="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:layout_marginRight="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="غواصی و ورزشهای آبی"
+            android:textColor="@color/black"
+            android:textSize="18sp">
+
+        </TextView>
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/graylight"
+        ></LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lnrmahigiri"
+        android:gravity="center_vertical"
+        android:layout_marginTop="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:layout_marginRight="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ماهیگیری"
+            android:textColor="@color/black"
+            android:textSize="18sp">
+
+        </TextView>
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/graylight"
+        ></LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lnrtajhizatvarzeshi"
+                android:gravity="center_vertical"
+                android:layout_marginTop="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:layout_marginRight="16dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="تجهیزات ورزشی"
+                    android:textColor="@color/black"
+                    android:textSize="18sp">
+
+                </TextView>
+
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/graylight"
+                ></LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lnrvarzeshhayezemestani"
+                android:gravity="center_vertical"
+                android:layout_marginTop="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:layout_marginRight="16dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="ورزش های زمستانی"
+                    android:textColor="@color/black"
+                    android:textSize="18sp">
+
+                </TextView>
+
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/graylight"
+                ></LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lnrasb"
+                android:gravity="center_vertical"
+                android:layout_marginTop="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:layout_marginRight="16dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="اسب و تجهیزات اسب سواری"
+                    android:textColor="@color/black"
+                    android:textSize="18sp">
+
+                </TextView>
+
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/graylight"
+                ></LinearLayout>
+
+
+
+
+    <LinearLayout
+        android:id="@+id/lnrallagahivarzesh"
+        android:gravity="center_vertical"
+        android:layout_marginTop="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+
+
+        <TextView
+
+            android:layout_marginRight="16dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="همه آگهی های ورزش و تناسب اندام"
+            android:textColor="@color/black"
+            android:textSize="18sp">
+
+        </TextView>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/graylight"
+        ></LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

@@ -2,41 +2,17 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item
-        android:title="دیوار من"
-        android:icon="@drawable/ic_person_black_24dp"
-        android:id="@+id/mydivarHome">
-
-    </item>
-    <item
-        android:title="چت"
-        android:icon="@drawable/ic_chat"
-        android:id="@+id/chatHome">
-
-    </item>
+        android:title="دیوار من" android:icon="@drawable/ic_person_black_24dp" android:id="@+id/mydivarHome"></item>
 
     <item
-        android:title="ثبت آگهی"
-        android:icon="@drawable/ic_add_circle_black_24dp"
-        android:id="@+id/newaddHome">
-
-    </item>
-    <item
-
-        android:title="دسته ها"
-        android:icon="@drawable/ic_list_black_24dp"
-        android:id="@+id/categuryHome">
-
-    </item>
-
+        android:title="چت" android:icon="@drawable/ic_chat" android:id="@+id/chatHome"></item>
 
     <item
-        android:title="دیوار"
-        android:icon="@drawable/divar_logo"
-        android:id="@+id/divarHome">
+        android:title="ثبت آگهی" android:icon="@drawable/ic_add_circle_black_24dp" android:id="@+id/newaddHome"></item>
 
-    </item>
+    <item
+        android:title="دسته ها" android:icon="@drawable/ic_list_black_24dp" android:id="@+id/categuryHome"></item>
 
-
-
-
+    <item
+        android:title="دیوار" android:icon="@drawable/divar_logo" android:id="@+id/divarHome"></item>
 </menu>
